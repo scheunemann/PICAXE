@@ -1,7 +1,7 @@
-; Get Debug output of ultra sound
+; Debug Bot102 (type 1)
 
 ; Define pins for Trigger & Echo
-symbol frontL_SIG 	= C.1 
+symbol frontL_SIG	= C.1 
 symbol frontR_SIG	= C.3
 symbol back_SIG	= B.0
 
@@ -13,6 +13,22 @@ symbol frontL_range	= w1
 symbol frontR_range	= w2
 symbol back_range	= w3
 symbol linevalue	= b0
+
+
+start:
+
+	forward A
+	forward B
+	pause 1000
+	
+	backward A
+	backward B
+	pause 1000
+	
+	halt A
+	halt B
+	
+	goto main
 
 main:
 	 ; use dedicated `ultra` command
