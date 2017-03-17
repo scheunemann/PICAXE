@@ -1,7 +1,7 @@
 ; Switch lights on and off with the user button
 
 ; pre load value for timer for one `tick` every 0.1 sec
-Settimer 34286
+Settimer 62411
 
 ; Symbols
 Symbol uButton  = pinC.6
