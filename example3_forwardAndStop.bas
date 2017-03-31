@@ -2,7 +2,7 @@
 
 Settimer 62411
 ; details http://www.picaxe.com/docs/picaxe_manual2.pdf pg 232
-; Alternative `Settimer 34286` means a tick every 1 sec
+; Alternative `Settimer 34286` means a tick every 1 sec (instead of every 0.1 sec)
 
 ; Symbols
 Symbol frontL_SIG   	= C.1 
