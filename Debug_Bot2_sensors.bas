@@ -1,16 +1,16 @@
-; Get Debug output of ultra sound
+; Get Debug output for the bot type 2: light and line sensor
 
-; Define pins for Trigger & Echo
+; Define pins
 Symbol frontL_SIG 	= 9
 Symbol frontR_SIG 	= 7
 
 ; ADC channel 8
 Symbol line = 8
 
-; 8 bit word variable for ranges
-Symbol frontL_range	= b0
-Symbol frontR_range  = b1
-Symbol linevalue 		= b2
+; 8 bit word variable for light intensity
+Symbol frontL_intensity	= b0
+Symbol frontR_intensity  = b1
+Symbol linevalue 	= b2
 
 ; LED
 Symbol light = B.0
@@ -33,9 +33,9 @@ Start:
 
 Main:
 	
-	 ; use dedicated `ultra` command
-	Readadc frontL_SIG, frontL_range
-	Readadc frontR_SIG, frontR_range
+	; read light intensity from adc (analog digitial converter) 
+	Readadc frontL_SIG, frontL_intensity
+	Readadc frontR_SIG, frontR_intensity
 	
 	; read line sensor
 	Readadc line, linevalue
