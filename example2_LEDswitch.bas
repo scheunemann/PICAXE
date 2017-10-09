@@ -26,9 +26,7 @@ Main:
 		Endif
 	
 		Do Loop Until timer > 0
-	
-		Debug
-		
+
 	Loop ;infinite loop
 
 End

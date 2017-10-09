@@ -16,9 +16,6 @@ Main:
 	
 	; read line sensor
 	Readadc linesensor, linevalue
-			
-	; display values (named like symbols) 
-	Debug 
 	
 	If linevalue > threshold Then
 		Halt A
